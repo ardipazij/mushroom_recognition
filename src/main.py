@@ -1,7 +1,7 @@
 import telebot
 from only_model import ModelInference
 TOKEN = '7027172795:AAGaE-tqlMTNAwiIyGavIjypBEQYSTdbNbE'
-MODEL_PATH = 'content/epoch_150.pth'
+MODEL_PATH = 'content/mushroom_logs/epoch_150.pth'
 
 bot = telebot.TeleBot(TOKEN)
 model_inference = ModelInference(model_path=MODEL_PATH)
