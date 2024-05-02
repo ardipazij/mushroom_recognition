@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: telegram-bot-zagadochno
+    container_name: mushrooms_recognition
     restart: always
     networks:
       - bot_network
