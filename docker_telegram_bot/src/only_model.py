@@ -10,7 +10,8 @@ import PIL
 from PIL import Image
 import os
 from matplotlib import pyplot as plt
-from torch.utils.tensorboard import SummaryWrite
+from torch.utils.tensorboard import SummaryWriter
+from rembg import remove
 
 torch.manual_seed(42)
 np.random.seed(42)
@@ -227,9 +228,6 @@ configuration_dict = {'number_of_epochs': epochs, 'batch_size': batch_size, 'bas
 tr_tuple, model = train(model, optimizer, criterion, sheduler, dataloader['train'], dataloader['valid'], device, epochs)
 
 show_losses(tr_tuple, range(100))
-
-!pip install rembg
-from rembg import remove
 
 class ModelInference:
     def __init__(self, model_path: str, device='cpu'):
