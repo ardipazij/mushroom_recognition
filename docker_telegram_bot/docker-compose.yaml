@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  telegram-bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: telegram-bot-zagadochno
+    restart: always
+    networks:
+      - bot_network
+networks:
+  bot_network:
+    driver: bridge
