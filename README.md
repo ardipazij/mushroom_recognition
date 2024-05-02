@@ -1,4 +1,4 @@
-**Mushroom Recognition with MobileNet**
+CV-model of Mushroom Recognition with MobileNet
 
 **Introduction:**
 This project aims to build a mushroom recognition system using deep learning techniques, specifically leveraging the MobileNet architecture. The recognition system is trained on a dataset consisting of images of various mushroom species. The project employs transfer learning by fine-tuning the pre-trained MobileNet model to recognize mushroom species from images.
